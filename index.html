@@ -139,15 +139,14 @@
       font-size: 1rem;
     }
 
-    /* Profile section image + text */
-    .profile-container {
+    .about-container {
       display: flex;
       align-items: center;
       gap: 2rem;
       flex-wrap: wrap;
     }
 
-    .profile-img {
+    .about-img {
       width: 160px;
       height: 160px;
       object-fit: cover;
@@ -155,9 +154,14 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .profile-text {
+    .about-text {
       flex: 1;
       min-width: 250px;
+    }
+
+    .about-text h2 {
+      color: #2e3a59;
+      margin-top: 0;
     }
 
     @media (max-width: 600px) {
@@ -201,6 +205,16 @@
         font-weight: bold;
         color: #2e3a59;
       }
+
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-text {
+        padding-top: 1rem;
+      }
     }
   </style>
 </head>
@@ -216,24 +230,14 @@
 </header>
 
 <section>
-  <h2>Profile</h2>
-  <div class="card profile-card">
-    <div class="profile-container">
-      <img src="images/kavya.jpg" alt="Kavya's Photo" class="profile-img" />
-      <div class="profile-text">
-        <p>
-          Aspiring engineer with a strong foundation in web development and Azure DevOps.
-          Passionate about creating user-centric digital experiences and working in collaborative environments
-          to deliver high-quality results.
-        </p>
-        <ul>
-          <li>Hands-on experience with modern web technologies including HTML, CSS, JavaScript, and frontend frameworks</li>
-          <li>Skilled in managing CI/CD pipelines, virtual machines, and Azure cloud services</li>
-          <li>Committed to continuous learning and upskilling in cloud computing and DevOps practices</li>
-          <li>Proven ability to work effectively in team settings, ensuring project milestones are met with precision</li>
-          <li>Strong problem-solving mindset with a focus on optimizing user experience and performance</li>
-        </ul>
-      </div>
+  <div class="card about-container">
+    <img src="images/kavya.jpg" alt="Kavya's Photo" class="about-img" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p><strong>Career Objective:</strong> Passionate AI & ML enthusiast with hands-on experience in developing predictive models and full stack web applications, machine learning pipelines, and cloud technologies. Proven ability to deliver scalable solutions and optimize systems in collaborative and remote settings...</p>
+      <p>B.Tech in Computer Science & Engineering majoring in AI & ML from Aditya College of Engineering and Technology...</p>
+      <p>Interned as a <strong>Frontend Developer</strong> at UniStack, and in <strong>AI & ML</strong> roles at SkillDzire.</p>
+      <p>Certified in <strong>AWS Cloud Practitioner</strong>, <strong>Python</strong>, and <strong>C Programming</strong>.</p>
     </div>
   </div>
 
