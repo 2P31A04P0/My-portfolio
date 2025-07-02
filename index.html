@@ -147,12 +147,13 @@
     }
 
     .about-img {
-      width: 160px;
-      height: 160px;
+      width: 180px;
+      height: auto;
       object-fit: cover;
-      border-radius: 50%;
+      border-radius: 16px; /* Rounded rectangle */
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
+
     
     .about-text {
       flex: 1;
@@ -215,6 +216,17 @@
       .about-text {
         padding-top: 1rem;
       }
+      a[href*="certificates"] {
+        color: #1e88e5;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+    
+     a[href*="certificates"]:hover {
+        color: #1565c0;
+        text-decoration: underline;
+      }
+
     }
   </style>
 </head>
