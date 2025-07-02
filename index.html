@@ -139,6 +139,27 @@
       font-size: 1rem;
     }
 
+    /* Profile section image + text */
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
@@ -195,21 +216,25 @@
 </header>
 
 <section>
-  <img src="images/kavya.jpg" alt="Kavya's Photo" style="max-width: 250px; border-radius: 12px; display: block; margin: auto;" />
   <h2>Profile</h2>
-  <div class="card">
-    <p>
-      Aspiring engineer with a strong foundation in web development and Azure DevOps.
-      Passionate about creating user-centric digital experiences and working in collaborative environments
-      to deliver high-quality results.
-    </p>
-    <ul>
-      <li>Hands-on experience with modern web technologies including HTML, CSS, JavaScript, and frontend frameworks</li>
-      <li>Skilled in managing CI/CD pipelines, virtual machines, and Azure cloud services</li>
-      <li>Committed to continuous learning and upskilling in cloud computing and DevOps practices</li>
-      <li>Proven ability to work effectively in team settings, ensuring project milestones are met with precision</li>
-      <li>Strong problem-solving mindset with a focus on optimizing user experience and performance</li>
-    </ul>
+  <div class="card profile-card">
+    <div class="profile-container">
+      <img src="images/kavya.jpg" alt="Kavya's Photo" class="profile-img" />
+      <div class="profile-text">
+        <p>
+          Aspiring engineer with a strong foundation in web development and Azure DevOps.
+          Passionate about creating user-centric digital experiences and working in collaborative environments
+          to deliver high-quality results.
+        </p>
+        <ul>
+          <li>Hands-on experience with modern web technologies including HTML, CSS, JavaScript, and frontend frameworks</li>
+          <li>Skilled in managing CI/CD pipelines, virtual machines, and Azure cloud services</li>
+          <li>Committed to continuous learning and upskilling in cloud computing and DevOps practices</li>
+          <li>Proven ability to work effectively in team settings, ensuring project milestones are met with precision</li>
+          <li>Strong problem-solving mindset with a focus on optimizing user experience and performance</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <h2>Education</h2>
